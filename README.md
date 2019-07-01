@@ -1,33 +1,32 @@
-# Working state
+## Working state
 AR_Drone in willow world with a 360 LIDAR with 16 points
-![Working with 16 points]("docs/working16.png")
+![Working with 16 points](docs/working16.png)
 
 # Instructions on Control:
 
-# Launch
-    ```
+## Launch
+```
 roslaunch cvg_sim_gazebo ardrone_testworld.launch
-    ```
+```
 #Takeoff
-    ```
+```
 rostopic pub -1 /ardrone/takeoff std_msgs/Empty
-    ```
-# Control
-    ```
+```
+## Control
+```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-    ```
-# Land
-    ```
+```
+## Land
+```
 rostopic pub -1 /ardrone/land std_msgs/Empty
-    ```
+```
 
-# Programmetic control
+## Programmetic control
 
 http://wiki.ros.org/tum_simulator#Manual_control
 
 
-# tum_simulator on Indigo and Gazebo 7
-=============
+# Setting up on Kinetic and Gazebo 7
 
 These packages are used to simulate the flying robot Ardrone in ROS environment using gazebo simulator. Totally they are 4 packages. Their functions are descript as below:
 

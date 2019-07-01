@@ -19,7 +19,31 @@
     
 5. I am trying to get the laser scan data published to the topic /scan So that I can run amcl and get a tf between /map and /base_link frames.
 
-tum_simulator on Indigo and Gazebo 7
+# Instructions on Control:
+
+# Launch
+    ```
+roslaunch cvg_sim_gazebo ardrone_testworld.launch
+    ```
+#Takeoff
+    ```
+rostopic pub -1 /ardrone/takeoff std_msgs/Empty
+    ```
+# Control
+    ```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+    ```
+# Land
+    ```
+rostopic pub -1 /ardrone/land std_msgs/Empty
+    ```
+
+# Programmetic control
+
+http://wiki.ros.org/tum_simulator#Manual_control
+
+
+# tum_simulator on Indigo and Gazebo 7
 =============
 
 These packages are used to simulate the flying robot Ardrone in ROS environment using gazebo simulator. Totally they are 4 packages. Their functions are descript as below:

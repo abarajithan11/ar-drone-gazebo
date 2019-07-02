@@ -1,23 +1,6 @@
-#  Note to samith: 
-
-1. Please Setup as below (original instructions)
-2. Run with 
-
-    ```
-    roslaunch cvg_sim_gazebo ardrone_willowworld.launch verbose:=true
-    ```
-
-3. I have modified the sensors xacro and am current using the following file:
-    ```
-    /home/aba/catkin_ws/src/ardrone_simulator_gazebo7/cvg_sim_gazebo/urdf/quadrotor_sensors_new.urdf.xacro
-    ```
-
-4. Also modified the laser plugin file and using this one (first commented code is original, doest work either)
-    ```
-    /home/aba/catkin_ws/src/ardrone_simulator_gazebo7/cvg_sim_gazebo/urdf/sensors/hokuyo_utm30lx.urdf.xacro
-    ```
-    
-5. I am trying to get the laser scan data published to the topic /scan So that I can run amcl and get a tf between /map and /base_link frames.
+# Working state
+AR_Drone in willow world with a 360 LIDAR with 16 points
+![Working with 16 points]("docs/working16.png")
 
 # Instructions on Control:
 
